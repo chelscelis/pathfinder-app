@@ -1,0 +1,117 @@
+.grid-container {
+  margin: 10% auto;
+}
+
+.grid {
+  white-space: pre;
+}
+
+button {
+  margin: 2px;
+}
+
+.button {
+  width: 150px;
+  background-color: #d9d9d9; 
+  border: none;
+  border-radius: 12px;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px 10px 20px;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #008cba;
+  color: white;
+}
+.button2:hover {
+  background-color: #ff8c00;
+  color: white;
+}
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.navbar {
+  background-color: #d9d9d9;
+  padding: 10px;
+  height: 30px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.div1 {
+  padding: 50px 0px 20px;
+  font-size: 18px;
+}
+
+.tablegrid {
+  padding-top: 50px;
+  padding-left: 300px;
+}
+
+.nstart {
+  background-color: forestgreen;
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+}
+.nend {
+  background-color: firebrick;
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+}
+.nwall {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+}
+.nvisited {
+  background-color: skyblue;
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+}
+.nshortest {
+  background-color:orchid ;
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+}
+
+#node_box_wrapper{
+  display: table;
+  margin-bottom: 20px;
+}
+
+#node_box, #node_text{
+  display: inline-block;
+  margin-left: 30px;
+}
+
+#node_text{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
