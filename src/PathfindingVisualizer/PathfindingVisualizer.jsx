@@ -9,12 +9,12 @@ export default class PathfindingVisualizer extends Component {
     this.state = {
       grid: [],
       START_NODE_ROW: 10,
-      FINISH_NODE_ROW: 5,
-      START_NODE_COL: 5,
-      FINISH_NODE_COL: 25,
+      FINISH_NODE_ROW: 10,
+      START_NODE_COL: 10,
+      FINISH_NODE_COL: 45,
       mouseIsPressed: false,
-      ROW_COUNT: 28,
-      COLUMN_COUNT: 50,
+      ROW_COUNT: 27,
+      COLUMN_COUNT: 55,
       MOBILE_ROW_COUNT: 10,
       MOBILE_COLUMN_COUNT: 20,
       isRunning: false,
@@ -385,7 +385,8 @@ export default class PathfindingVisualizer extends Component {
         </div>
         <div class="sidenav">
           <div>
-            <a className="navbar-brand" href="/">
+            <img src="pathfinderlogo.webp" height="30px"></img>
+            <a class="a" href="/">
               <b>PathFinder</b>
             </a>
           </div>
