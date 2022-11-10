@@ -8,19 +8,19 @@ export default class PathfindingVisualizer extends Component {
     super();
     this.state = {
       grid: [],
-      START_NODE_ROW: 5,
+      START_NODE_ROW: 10,
       FINISH_NODE_ROW: 5,
       START_NODE_COL: 5,
       FINISH_NODE_COL: 25,
       mouseIsPressed: false,
-      ROW_COUNT: 25,
+      ROW_COUNT: 28,
       COLUMN_COUNT: 50,
       MOBILE_ROW_COUNT: 10,
       MOBILE_COLUMN_COUNT: 20,
       isRunning: false,
       isStartNode: false,
       isFinishNode: false,
-      isWallNode: false, // xxxxxxx
+      isWallNode: false, 
       currRow: 0,
       currCol: 0,
       isDesktopView: true,
@@ -71,7 +71,6 @@ export default class PathfindingVisualizer extends Component {
     }
   }
 
-  /******************** Set up the initial grid ********************/
   getInitialGrid = (
     rowCount = this.state.ROW_COUNT,
     colCount = this.state.COLUMN_COUNT,
@@ -101,9 +100,7 @@ export default class PathfindingVisualizer extends Component {
         Math.abs(this.state.FINISH_NODE_ROW - row) +
         Math.abs(this.state.FINISH_NODE_COL - col),
       isVisited: false,
-      isWall: false, 
-        // for pre-made map
-        // (row === 0 && col === 0),
+      isWall: false,
       previousNode: null,
       isNode: true,
     };
